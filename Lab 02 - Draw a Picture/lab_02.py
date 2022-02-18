@@ -22,11 +22,18 @@ arcade.draw_polygon_filled(((150, 450), (250, 550), (400, 625), (490, 500), (600
 arcade.draw_triangle_filled(250, 550, 400, 625, 454, 550, arcade.color.WHITE)
 arcade.draw_triangle_filled(600, 700, 750, 850, 806.5, 700, arcade.color.WHITE)
 
-# dibujo las nubes
-arcade.draw_ellipse_filled(250, 850, 275, 175, arcade.color.WHITE)
+# dibujo la nube
+arcade.draw_ellipse_filled(250, 850, 330, 175, arcade.color.WHITE)
+arcade.draw_ellipse_filled(250, 850, 155, 230, arcade.color.WHITE)
+arcade.draw_ellipse_filled(335, 850, 110, 190, arcade.color.WHITE)
+arcade.draw_ellipse_filled(165, 850, 110, 190, arcade.color.WHITE)
 
 # dibujo el cesped
 arcade.draw_lrtb_rectangle_filled(0, 1000, 450, 0, arcade.color.GREEN)
+
+# dibujo la carretera
+arcade.draw_lrtb_rectangle_filled(0, 1000, 400, 300, arcade.color.COOL_GREY)
+arcade.draw_lrtb_rectangle_filled(0, 1000, 355, 345, arcade.color.WHITE)
 
 arcade.finish_render()  # termino de dibujar
 
