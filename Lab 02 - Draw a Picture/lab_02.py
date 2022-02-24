@@ -35,6 +35,14 @@ arcade.draw_lrtb_rectangle_filled(0, 1000, 450, 0, arcade.color.GREEN)
 arcade.draw_lrtb_rectangle_filled(0, 1000, 400, 300, arcade.color.COOL_GREY)
 arcade.draw_lrtb_rectangle_filled(0, 1000, 355, 345, arcade.color.WHITE)
 
-arcade.finish_render()  # termino de dibujar
+# dibujo un coche
+# dibujo las ruedas
+arcade.draw_circle_filled(50, 322, 20, arcade.color.WARM_BLACK)
+arcade.draw_circle_filled(150, 322, 20, arcade.color.WARM_BLACK)
+# dibujo la carroceria
+arcade.draw_polygon_filled(((20, 335), (20, 350), (40, 400), (150, 400), (170, 370), (205, 370), (205, 335)),
+                           arcade.color.RED)
 
+# termino de dibujar y ejecuto
+arcade.finish_render()
 arcade.run()
