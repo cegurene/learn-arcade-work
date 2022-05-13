@@ -81,7 +81,7 @@ def main():
     arcade.open_window(1000, 1000, "Dibujo")  # abro ventana del dibujo
     arcade.set_background_color(arcade.color.DEEP_SKY_BLUE)  # selecciono color del fondo
 
-    # dibujo 60 veces por segyndo
+    # dibujo 60 veces por segundo
     arcade.schedule(dibujar_todo, 1/60)
 
     # termino de dibujar y ejecuto
